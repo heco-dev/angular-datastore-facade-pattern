@@ -8,9 +8,9 @@ import { CustomersService } from './services/customers.service';
 export class AppComponent {
 
   constructor(
-    readonly homeSvc: CustomersService
+    readonly customersSvc: CustomersService
   ) {
-    this.homeSvc.getData();
+    this.customersSvc.storeAllCustomers();
   }
 
 }

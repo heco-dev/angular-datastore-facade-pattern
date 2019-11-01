@@ -4,7 +4,7 @@ import { tap, take } from 'rxjs/operators';
 import { CustomersStoreService } from './customers-store.service';
 
 @Injectable({
-  providedIn: "root"
+  providedIn: 'root'
 })
 export class CustomersService {
 
@@ -15,7 +15,7 @@ export class CustomersService {
     readonly customersStoreSvc: CustomersStoreService
   ) { }
 
-  getData() {
+  storeAllCustomers() {
     this.customersControllerSvc.getCustomers(this.API_VERSION)
       .pipe(
         tap((data) => this.customersStoreSvc.setCustomers(data)),
