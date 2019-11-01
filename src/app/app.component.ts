@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HomeService } from './services/home.service';
+import { CustomersService } from './services/customers.service';
 
 @Component({
   selector: 'my-app',
@@ -8,7 +8,7 @@ import { HomeService } from './services/home.service';
 export class AppComponent {
 
   constructor(
-    readonly homeSvc: HomeService
+    readonly homeSvc: CustomersService
   ) {
     this.homeSvc.getData();
   }
