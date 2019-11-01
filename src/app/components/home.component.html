@@ -1,6 +1,15 @@
 <div style="padding:1em;margin:1em;">
-	<p style="color: green;padding:0;margin:0;">app-home component</p>
-	<div style="border: green 1px solid;">
-		<h4>{{welcomeText}} world!!!!!!!!</h4>
-	</div>
+  <p style="color: green;padding:0;margin:0;">app-home component</p>
+  <div style="border: green 1px solid;">
+    <h4>{{ welcomeText }} world!</h4>
+    <hr />
+    <ul *ngIf="homeData$ | async as homes; else empty">
+      <li *ngFor="let home of homes">
+        name = {{home.name}} (id: {{ home.id }})
+      </li>
+    </ul>
+    <ng-template #empty>
+      fetching data...
+    </ng-template>
+  </div>
 </div>

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { Observable } from 'rxjs';
+import { HomeStoreService } from '../services/home-store.service';
 
 @Component({
   selector: 'app-home',
@@ -8,8 +10,12 @@ export class HomeComponent {
 
   welcomeText = 'Hello,';
 
+  homeData$: Observable<any>;
+
   constructor(
-  ) {    
+    readonly homeStoreSvc: HomeStoreService
+  ) {
+    this.homeData$ = this.homeStoreSvc.getData();
   }
 
 }
