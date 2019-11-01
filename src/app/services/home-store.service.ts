@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { SimpleStore } from 'src/externals/simple-store';
+import { SimpleStore } from '../../externals/simple-store';
 
 @Injectable({
     providedIn: 'root'
