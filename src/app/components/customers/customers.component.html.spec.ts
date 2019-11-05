@@ -16,11 +16,9 @@ describe('CustomersComponentHTML', () => {
     { id: 999, name: 'Bob', firstTime: true }
   ];
 
-  let customersStoreSvcSTUB: sinon.SinonStubbedInstance<CustomersStoreService>;
-
   beforeEach(async(() => {
 
-    customersStoreSvcSTUB = sinon.createStubInstance(CustomersStoreService);
+    const customersStoreSvcSTUB = sinon.createStubInstance(CustomersStoreService);
     customersStoreSvcSTUB.getCustomers.returns(of(customersFAKE));
 
     TestBed.configureTestingModule({
@@ -44,9 +42,7 @@ describe('CustomersComponentHTML', () => {
     html = fixture.nativeElement;
   });
 
-  afterEach(() => {
-    sinon.restore();
-  });
+  afterEach(() => sinon.restore());
 
   it('should render 3 elements in the unordered list', () => {
 
