@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { tap, take } from 'rxjs/operators';
 import { CustomersStoreService } from './customers-store.service';
-import { CustomersControllerService } from 'src/externals/customers-controller.service';
+import { CustomersControllerService } from '../../externals/customers-controller.service';
 
 @Injectable({
   providedIn: 'root'

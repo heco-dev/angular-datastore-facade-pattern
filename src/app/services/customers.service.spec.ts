@@ -4,7 +4,7 @@ import { of } from 'rxjs';
 import { CustomersService } from './customers.service';
 import { CustomersStoreService } from './customers-store.service';
 import { Customer } from '../models/customer';
-import { CustomersControllerService } from 'src/externals/customers-controller.service';
+import { CustomersControllerService } from '../../externals/customers-controller.service';
 
 describe('CustomersService', () => {
   let service: CustomersService;

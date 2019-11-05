@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { of } from 'rxjs';
 import { delay } from 'rxjs/operators';
-import { customers } from 'src/fakes/list-of-customers';
+import { customers } from '../fakes/list-of-customers';
 
 @Injectable({
   providedIn: 'root'

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
 import { CustomersStoreService } from '../../services/customers-store.service';
-import { Customer } from 'src/app/models/customer';
+import { Customer } from '../../models/customer';
 
 @Component({
   selector: 'app-customers-new',

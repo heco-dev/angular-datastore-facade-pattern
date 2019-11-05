@@ -1,8 +1,8 @@
 import { ComponentFixture, TestBed, async } from '@angular/core/testing';
 import * as sinon from "sinon";
 import { CustomersComponent } from './customers.component';
-import { Customer } from 'src/app/models/customer';
-import { CustomersStoreService } from 'src/app/services/customers-store.service';
+import { Customer } from '../../models/customer';
+import { CustomersStoreService } from '../../services/customers-store.service';
 import { of } from 'rxjs';
 
 describe('CustomersComponentHTML', () => {
