@@ -2,9 +2,9 @@ import { TestBed } from '@angular/core/testing';
 import * as sinon from 'sinon';
 import { of } from 'rxjs';
 import { CustomersService } from './customers.service';
-import { CustomersControllerService } from 'src/fakes/customers-controller.service';
 import { CustomersStoreService } from './customers-store.service';
 import { Customer } from '../models/customer';
+import { CustomersControllerService } from 'src/externals/customers-controller.service';
 
 describe('CustomersService', () => {
   let service: CustomersService;
